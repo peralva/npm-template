@@ -18,8 +18,8 @@
 	},
 	"exports": "./dist/index.js",
 	"files": [
-		"dist/index.d.ts",
-		"dist/index.js"
+		"dist/*.d.ts",
+		"dist/*.js"
 	],
 	"homepage": "https://github.com/peralva/npm-template#readme",
 	"keywords": [
