@@ -10,7 +10,7 @@ NPM Template
 
 ## Installation
 
-    npm i -D @peralva/npm-template
+    npm i @peralva/npm-template
 
 ## Usage
 
