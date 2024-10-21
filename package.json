@@ -1,0 +1,47 @@
+{
+	"author": "Bruno Peralva <brunoperalva@hotmail.com>",
+	"bugs": {
+		"url": "https://github.com/peralva/npm-template/issues"
+	},
+	"description": "NPM Template",
+	"devDependencies": {
+		"@eslint/js": "^9.13.0",
+		"@peralva/prettier-config": "^1.0.14",
+		"@peralva/tsconfig": "^1.0.2",
+		"@types/node": "^22.7.7",
+		"eslint": "^9.13.0",
+		"eslint-config-prettier": "^9.1.0",
+		"globals": "^15.11.0",
+		"prettier": "^3.3.3",
+		"typescript": "^5.6.3",
+		"typescript-eslint": "^8.10.0"
+	},
+	"exports": "./dist/index.js",
+	"files": [
+		"dist/index.d.ts",
+		"dist/index.js"
+	],
+	"homepage": "https://github.com/peralva/npm-template#readme",
+	"keywords": [
+		"npm",
+		"template"
+	],
+	"license": "MIT",
+	"main": "dist",
+	"name": "@peralva/npm-template",
+	"prettier": "@peralva/prettier-config",
+	"publishConfig": {
+		"access": "public",
+		"provenance": true
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/peralva/npm-template.git"
+	},
+	"scripts": {
+		"build": "npx tsc",
+		"test": "node --test dist"
+	},
+	"type": "module",
+	"version": "1.0.0"
+}
