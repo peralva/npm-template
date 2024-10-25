@@ -7,19 +7,29 @@
 	"devDependencies": {
 		"@eslint/js": "^9.13.0",
 		"@peralva/prettier-config": "^1.0.14",
-		"@peralva/tsconfig": "^1.0.2",
+		"@peralva/tsconfig": "^1.0.3",
+		"@rollup/plugin-typescript": "^12.1.1",
 		"@types/node": "^22.7.7",
 		"eslint": "^9.13.0",
 		"eslint-config-prettier": "^9.1.0",
 		"globals": "^15.11.0",
 		"prettier": "^3.3.3",
+		"rollup": "^4.24.0",
+		"tslib": "^2.8.0",
 		"typescript": "^5.6.3",
 		"typescript-eslint": "^8.10.0"
 	},
-	"exports": "./dist/index.js",
+	"exports": {
+		".": {
+			"import": "./lib/index.mjs",
+			"require": "./lib/index.js",
+			"types": "./lib/index.d.ts"
+		}
+	},
 	"files": [
-		"dist/*.d.ts",
-		"dist/*.js"
+		"lib/index.js",
+		"lib/index.mjs",
+		"lib/**/*.d.ts"
 	],
 	"homepage": "https://github.com/peralva/npm-template#readme",
 	"keywords": [
@@ -27,21 +37,23 @@
 		"template"
 	],
 	"license": "MIT",
-	"main": "dist",
+	"main": "lib/index.js",
+	"module": "lib/index.mjs",
 	"name": "@peralva/npm-template",
 	"prettier": "@peralva/prettier-config",
 	"publishConfig": {
-		"access": "public",
-		"provenance": true
+		"access": "public"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/peralva/npm-template.git"
 	},
 	"scripts": {
-		"build": "npx tsc",
+		"build": "rollup --config",
+		"build:dev": "tsc --outDir ./dist/ --sourceMap true --watch",
+		"build:test": "tsc --outDir ./dist/",
+		"start": "node --enable-source-maps --inspect --trace-warnings --watch dist",
 		"test": "node --test dist"
 	},
-	"type": "module",
-	"version": "1.0.1"
+	"version": "1.0.2"
 }
