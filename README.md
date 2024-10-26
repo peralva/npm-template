@@ -10,8 +10,13 @@ NPM Template
 
 ## Installation
 
-    npm install @peralva/npm-template
+```bash
+npm install @peralva/npm-template
+```
 
 ## Usage
 
-...
+```ts
+import npmTemplate from '@peralva/npm-template';
+console.log(npmTemplate);
+```
