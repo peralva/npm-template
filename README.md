@@ -11,12 +11,12 @@ NPM Template
 ## Installation
 
 ```bash
-npm install @peralva/npm-template
+npm install --save @peralva/npm-template
 ```
 
 ## Usage
 
 ```ts
-import npmTemplate from '@peralva/npm-template';
+import { npmTemplate } from '@peralva/npm-template';
 console.log(npmTemplate);
 ```
