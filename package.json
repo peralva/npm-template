@@ -3,22 +3,22 @@
 	"bugs": {
 		"url": "https://github.com/peralva/npm-template/issues"
 	},
-	"description": "NPM Template",
+	"description": "Template",
 	"devDependencies": {
-		"@eslint/js": "^9.18.0",
+		"@eslint/js": "^9.22.0",
 		"@peralva/prettier-config": "^1.0.15",
 		"@peralva/tsconfig": "^1.0.5",
 		"@rollup/plugin-typescript": "^12.1.2",
-		"@types/node": "^22.10.7",
-		"eslint": "^9.18.0",
+		"@types/node": "^22.13.10",
+		"eslint": "^9.22.0",
 		"eslint-config-prettier": "^9.1.0",
-		"globals": "^15.14.0",
-		"prettier": "^3.4.2",
-		"rollup": "^4.31.0",
+		"globals": "^15.15.0",
+		"prettier": "^3.5.3",
+		"rollup": "^4.35.0",
 		"rollup-plugin-dts": "^6.1.1",
 		"tslib": "^2.8.1",
 		"typescript": "^5.7.3",
-		"typescript-eslint": "^8.21.0"
+		"typescript-eslint": "^8.26.1"
 	},
 	"exports": {
 		".": {
@@ -40,7 +40,7 @@
 	"license": "MIT",
 	"main": "lib/index.js",
 	"module": "lib/index.mjs",
-	"name": "@peralva/npm-template",
+	"name": "@peralva/template",
 	"prettier": "@peralva/prettier-config",
 	"publishConfig": {
 		"access": "public"
@@ -56,5 +56,5 @@
 		"start": "node --enable-source-maps --inspect --trace-warnings --watch dist",
 		"test": "node --test dist"
 	},
-	"version": "1.0.0"
+	"version": "0.0.0"
 }
